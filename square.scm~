@@ -1,0 +1,5 @@
+; This is my first program in Lisp
+; Simple square procedure
+
+(define (sqr x) (* x x))
+(sqr 5)
