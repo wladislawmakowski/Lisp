@@ -15,8 +15,8 @@
 ; Here's the constructor for rational numbers and its selectors
 
 (define (make-RAT n d) (twin n d))
-(define (num x) (xcor x))
-(define (denom x) (ycor x))
+(define (num x) (let ((g (gcd (xcor x) (ycor x)))) (/ (xcor x) g)))
+(define (denom x) (let ((g (gcd (xcor x) (ycor x)))) (/ (ycor x) g)))
 
 ; And here is definition of sum, substraction, division and multiplication for rational numbers 
 
@@ -35,4 +35,5 @@
 (define (/RAT x y)
    (make-RAT (* (num x) (denom y))
              (* (num y) (denom x))))
+
 
