@@ -1,4 +1,3 @@
-#lang racket
 (define (map-tree func tree)
   (cond ((null? tree) null)
         ((not (pair? tree)) (func tree))
