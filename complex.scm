@@ -1,5 +1,5 @@
 ; ***************************************************************     ********************************* L ****
-; It is just simple library for the complex numbers operations ******* #N is the abstraction barriers  ↓    *
+; It is just simple library for the complex numbers operations ******* #N is the abstraction barriers   ↓    *
 ; ***************************************************************     ********************************* H  ***
 ;                                                                                                      *****
 ; Here's definition of a pair constructor and its selectors                                                   #1
