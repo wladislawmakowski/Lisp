@@ -1,3 +1,6 @@
+;; The first three lines of this file were inserted by DrRacket. They record metadata
+;; about the language level of this file in a form that our tools can easily process.
+#reader(lib "htdp-advanced-reader.ss" "lang")((modname complex) (read-case-sensitive #t) (teachpacks ()) (htdp-settings #(#t constructor repeating-decimal #t #t none #f () #f)))
 ; ***************************************************************     ********************************* L ****
 ; It is just simple library for the complex numbers operations ******* #N is the abstraction barriers   ↓    *
 ; ***************************************************************     ********************************* H  ***
@@ -126,7 +129,7 @@
          (print-COM-polar ))))
 
 (define (polar->rect t1)
-  (make-complex (* (magnitudee t1) (cos (angle t1))) (* (magnitudee t1) (sin (angle t1))) 'rectengular))
+  (make-complex (* (magnitudee t1) (cos (anglee t1))) (* (magnitudee t1) (sin (anglee t1))) 'rectengular))
 
 (define (rect->polar t1)
   (make-complex (sqrt (+ (* (real-part t1) (real-part t1)) (* (imag-part t1) (imag-part t1))))
